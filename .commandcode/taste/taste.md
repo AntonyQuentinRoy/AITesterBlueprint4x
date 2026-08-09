@@ -1,0 +1,4 @@
+- Uses a skill-file-driven workflow: maintains a `.commandcode/skills/` directory with numbered, reusable instruction files (e.g., `ch_01_anti_hallucination.md`, `ch_02_ricepot_testplangenerator.md`) and expects the AI to read and apply referenced skill files when composing a task. Confidence: 0.7
+- Values anti-hallucination rigor: expects outputs to clearly separate verified facts from inferences, explicitly label unknowns and assumptions, document limitations, and include self-validation that nothing was invented. Confidence: 0.8
+- Uses GitHub for source code hosting and prefers HTTPS remote URLs over SSH. Confidence: 0.7
+- Uses `develop` as the default/primary branch name instead of `main` or `master`. Confidence: 0.6
