@@ -3,3 +3,9 @@
 - Values anti-hallucination rigor: expects outputs to clearly separate verified facts from inferences, explicitly label unknowns and assumptions, document limitations, and include self-validation that nothing was invented. Confidence: 0.8
 - Uses GitHub for source code hosting and prefers HTTPS remote URLs over SSH. Confidence: 0.7
 - Uses `develop` as the default/primary branch name instead of `main` or `master`. Confidence: 0.6
+- Works on a Selenium + TestNG test automation project structured with the Page Object Model (POM) pattern (Java ecosystem). Confidence: 0.7
+- Develops on Windows; the user profile path contains a space (`C:\Users\Shirley Rachel`), so generated shell commands and scripts must quote paths robustly. Confidence: 0.7
+- Uses n8n (self-hosted workflow automation) installed as a global npm package on Windows; has been setting it up and troubleshooting its startup. Confidence: 0.6
+- Kicks off work with dense, prose-free pastes of complete raw context — error output/stack traces, terse symptom notes (e.g., "connection refused"), or full task inputs (an entire job description plus absolute file paths) — expecting autonomous end-to-end execution without clarification questions. Confidence: 0.7
+- Is a senior QA/test-automation professional (resume name: Antony Quentin Roy, ~20 years experience) actively job-hunting for Test Automation Architect roles; maintains a resume-tailoring "jobkit" project (`AITesterBlueprint4x`, chapter-based skills) and keeps career artifacts such as the master resume under `d:\Job_Data`. Confidence: 0.6
+ification questions. Confidence: 0.65

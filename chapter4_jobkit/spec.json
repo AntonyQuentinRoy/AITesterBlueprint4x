@@ -1,0 +1,96 @@
+{
+  "output": "D:/AI_4XBatch_Docs_Projects/AITesterBlueprint4x/chapter4_jobkit/AntonyQuentinRoy_SeniorEngineeringLeader_Quality.docx",
+  "docTitle": "Antony Quentin Roy — Senior Engineering Leader - Quality (QA Ownership)",
+  "name": "ANTONY QUENTIN ROY",
+  "title": "==SENIOR ENGINEERING LEADER – QUALITY==  ·  ==AUTOMATION-FIRST & AI-ENABLED TESTING==",
+  "margin": 0.45,
+  "contact": [
+    ["India", "8056009884", "roy3110@gmail.com|mailto:roy3110@gmail.com"],
+    ["linkedin.com/in/antonyquentinroy|https://www.linkedin.com/in/antonyquentinroy", "github.com/AntonyQuentinRoy|https://github.com/AntonyQuentinRoy"]
+  ],
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Senior Engineering Leader== with **20+ years** in quality engineering and proven track record building, scaling, and leading ==automation-first, AI-driven quality organizations==. Currently Sr. QA Manager at Concord Technologies, embedding quality into engineering workflows and driving ==shift-left quality culture== across enterprise programs. Hands-on technologist who ==owns quality as an engineering discipline==, not a downstream QA function. Expert in ==establishing automation standards across all layers== (unit, API, integration, E2E), ==driving AI-assisted testing adoption==, and ==integrating quality into CI/CD pipelines== at scale. Skilled at ==setting and enforcing quality gates==, defining measurable quality metrics, and ==holding teams accountable== for quality outcomes. Known for ==challenging delivery pressure when quality is at risk== and enabling teams to ship fast **and** reliably. Hands-on with code, testing tools (Selenium, Playwright, API frameworks), and emerging AI testing platforms (GitHub Copilot, RAG, MCP).",
+      "note": "SCALE & PHILOSOPHY FOCUS — This summary positions you as a quality leader who embeds quality into engineering culture, not a traditional QA manager. Emphasizes: (1) org-wide quality ownership mindset; (2) automation-first philosophy; (3) AI-driven strategy; (4) hands-on technical leadership; (5) accountability and quality gates. Verify: Do you have examples of driving org-level quality culture change? Pushing back on delivery timelines?"
+    },
+    {
+      "heading": "QUALITY LEADERSHIP & STRATEGY",
+      "rows": [
+        ["==Quality as Engineering Discipline==", "==Embedding quality into design, development, deployment== · ==Shift-left culture== across teams · Defining quality standards and best practices · Quality ownership at team level · Systemic quality improvement"],
+        ["==Automation & AI-Driven Testing==", "==Automation-first strategy across all layers== (unit, API, integration, E2E) · ==AI-assisted test generation and flakiness detection== · ==Intelligent coverage optimization== · Fast feedback loops in CI/CD · Continuous improvement in test execution speed and reliability"],
+        ["==Quality Standards & Accountability==", "==Setting and enforcing quality gates== · ==Release readiness criteria== · Quality metrics and KPIs (defect leakage, coverage, MTTR, pipeline health) · Root cause analysis and systemic improvements · Holding teams accountable for quality outcomes"]
+      ]
+    },
+    {
+      "heading": "ENGINEERING LEADERSHIP & INFLUENCE",
+      "rows": [
+        ["==Technical Leadership at Scale==", "==Leading quality initiatives across [N] teams== · Working directly with engineers and tech leads · Coaching on quality practices and testing strategies · Hands-on participation in quality decisions"],
+        ["==Stakeholder Influence & Accountability==", "==Pushing back on delivery pressure== when quality is compromised · ==Partnering with Product== on testable requirements · Engaging with senior engineers and leadership on quality trade-offs · Transparent quality reporting and risk communication"]
+      ]
+    },
+    {
+      "heading": "TECHNICAL EXPERTISE & TOOLS",
+      "rows": [
+        ["==Test Automation Frameworks==", "==Selenium== · ==Playwright== · TOSCA · UFT · API automation (Postman, TestNG, Cucumber)"],
+        ["==AI-Driven Testing Tools==", "==GitHub Copilot== (test code generation) · ==RAG frameworks== · ==MCP== · ==n8n== · Ollama · Groq"],
+        ["==CI/CD & DevOps==", "==Jenkins== · ==Azure DevOps== · ==CloudBees== · GitHub · SonarQube · Veracode"],
+        ["Languages & Frameworks", "Java · JavaScript · VBScript · BDD/Cucumber"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "==Sr. QA Manager — Quality Engineering Leader==",
+          "org": "Concord Technologies",
+          "meta": "Feb 2023 – Present  |  India  |  ==Enterprise quality transformation==",
+          "bullets": [
+            "==Own quality as an engineering discipline==, embedding testing into design, development, and deployment workflows; ==drive shift-left culture== across [N] teams and programs.",
+            "==Establish automation as the default== across all layers (unit, API, integration, E2E); ==architect and own end-to-end automation framework== (**2,000+ tests**) and drive adoption of ==AI-assisted testing== (GitHub Copilot, RAG, MCP) to accelerate test generation and defect detection.",
+            "==Set and enforce quality standards==, define release readiness criteria, and own quality gates; ==establish and track key metrics== (defect leakage, coverage, MTTR, pipeline health) — **drive quality accountability** across teams.",
+            "==Lead quality transformation initiatives==, working directly with engineering leaders and tech leads to improve quality practices; mentor teams on shift-left, BDD, risk-based testing, and continuous improvement.",
+            "==Challenge delivery pressure== when quality standards are at risk; ==partner with Product== to ensure requirements are testable and clear; ==communicate quality risks and mitigation strategies== to senior stakeholders."
+          ]
+        },
+        {
+          "title": "==Quality Assurance Manager — Quality Program Lead==",
+          "org": "TCS",
+          "meta": "Jan 2014 – Jan 2023  |  India  |  ==Large-scale portfolio quality delivery==",
+          "bullets": [
+            "==Managed quality across large enterprise portfolios==, covering [N] automation and testing workstreams; ==drove automation-first adoption== and established quality governance frameworks.",
+            "==Initiated and scaled large automation testing programs== across [N] teams in Agile environments; ==coordinated multiple workstreams==, resolved quality blockers, and ==reduced time-to-quality== [by X%/from X to Y].",
+            "==Established quality standards and best practices==; ==mentored [N] quality engineers and tech leads== on test design, automation patterns, and quality excellence.",
+            "==Drove quality transformation==, implementing ==shift-left testing==, ==CI/CD integration==, and ==automation reuse across programs== — achieved cost optimization [of X%/$X]."
+          ]
+        },
+        {
+          "title": "Test Lead — Quality Engineering Coach",
+          "org": "Cognizant Technology Solutions",
+          "meta": "Dec 2009 – Dec 2013  |  India  |  ==Test engineering & quality leadership==",
+          "bullets": [
+            "Led test engineering activities across [N] client engagements; ==drove quality practices adoption== and worked with ==cross-functional teams== to improve testing and quality outcomes.",
+            "Built and maintained ==reusable automation frameworks==; coached teams on quality excellence and continuous improvement."
+          ]
+        },
+        {
+          "title": "Project Engineer",
+          "org": "Polaris Software Lab Ltd",
+          "meta": "Aug 2006 – Nov 2009  |  India  |  ==Software engineering & QA foundations==",
+          "bullets": [
+            "Built foundational experience in ==software engineering and quality assurance==, progressing into test leadership and quality innovation roles."
+          ]
+        }
+      ],
+      "note": "FILL-IN RULE — Prioritize: (1) Number of teams/engineers you've led quality initiatives for; (2) Time-to-quality or defect-leakage reduction metrics; (3) Cost optimization achieved; (4) Specific examples of pushing back on delivery pressure or quality trade-offs; (5) AI testing adoption impact. Delete brackets you cannot fill honestly."
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["Master of Business Administration (Systems & IT)", "Bharathidasan University"],
+        ["Bachelor of Engineering (Electronics & Instrumentation)", "Bharathidasan University"]
+      ]
+    }
+  ],
+  "note": "SENIOR ENGINEERING LEADER — QUALITY FOCUS — This spec emphasizes org-wide quality culture, automation-first philosophy, AI-driven strategy, hands-on technical leadership, and accountability. 75–80% fit. GAPS: (1) Org-scale proof — You've led programs and teams; this role is 250+ engineers. Address by: emphasizing scalability of your frameworks, team coaching at scale, and willingness to grow into org leadership. (2) Hands-on engineering credibility — Ensure you can speak to hands-on testing/automation decisions, not just strategy. (3) Pushing back culture — Highlight examples of standing firm on quality. STRENGTHS: Automation expertise, AI tools knowledge, leadership track record, shift-left mindset, governance experience, mentoring."
+}

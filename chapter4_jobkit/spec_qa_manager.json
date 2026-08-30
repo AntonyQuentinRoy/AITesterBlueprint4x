@@ -1,0 +1,102 @@
+{
+  "output": "D:/AI_4XBatch_Docs_Projects/AITesterBlueprint4x/chapter4_jobkit/AntonyQuentinRoy_QualityAssuranceManager.docx",
+  "docTitle": "Antony Quentin Roy — Quality Assurance Manager",
+  "name": "ANTONY QUENTIN ROY",
+  "title": "==QUALITY ASSURANCE MANAGER==  ·  ==QUALITY STANDARDS & TEAM EXCELLENCE==",
+  "margin": 0.45,
+  "contact": [
+    ["India", "8056009884", "roy3110@gmail.com|mailto:roy3110@gmail.com"],
+    ["linkedin.com/in/antonyquentinroy|https://www.linkedin.com/in/antonyquentinroy", "github.com/AntonyQuentinRoy|https://github.com/AntonyQuentinRoy"]
+  ],
+  "sections": [
+    {
+      "heading": "SUMMARY",
+      "body": "==Quality Assurance Manager== with **20 years** in quality engineering and proven expertise in ==designing, implementing, and continuously improving quality standards== across organizations. Currently Sr. QA Manager at Concord Technologies, with a strong track record of ==developing quality policies and governance frameworks==, ==analyzing data to identify improvement opportunities==, ==coaching and mentoring diverse teams==, and ==ensuring adherence to quality standards==. Skilled at ==creating and presenting progress reports==, ==formulating strategies to enhance productivity and quality==, and ==helping employees achieve excellence==. Technical proficiency with data analysis tools, reporting systems, and quality metrics platforms. Excellent communicator with a demonstrated ability to ==work across departments== to solve quality problems and ==develop solutions aligned with company goals==. Strong eye for details and commitment to continuous organizational improvement.",
+      "note": "OPERATIONAL QA FOCUS — This summary emphasizes standards design, employee coaching, data analysis, and organizational quality culture (less technical automation). Verify: Do you have specific recruiting experience or would this be a new responsibility?"
+    },
+    {
+      "heading": "QUALITY STANDARDS & OPERATIONS",
+      "rows": [
+        ["==Quality Standards & Governance==", "==Design and implement company quality standards== · ==Quality policy development== · ==Standards enforcement and compliance== · Process design and documentation · Continuous improvement initiatives"],
+        ["==Data Analysis & Reporting==", "==Analyze data to identify improvement areas== · ==Track progress and trends== · ==Create performance reports== · Quality metrics and KPIs · Data-driven decision making"],
+        ["==Process Management==", "==Review and align processes with current trends== · Process optimization · ==Ensure consistency with company standards== · Workflow improvement"]
+      ]
+    },
+    {
+      "heading": "EMPLOYEE DEVELOPMENT & TEAM LEADERSHIP",
+      "rows": [
+        ["==Training & Coaching==", "==Train and motivate employees== · ==Coach teams to meet standards== · Skill development and capability building · Performance coaching"],
+        ["==Team Management==", "==Mentor diverse teams== · Corrective action and coaching · Performance management · Foster excellence and accountability"],
+        ["==Recruiting Support==", "==Assist in recruiting process== · Help source and screen candidates · [Support interview and onboarding processes]"]
+      ]
+    },
+    {
+      "heading": "STRATEGIC INITIATIVES",
+      "rows": [
+        ["==Productivity & Improvement==", "==Formulate strategies to increase productivity== · Cost optimization · Efficiency improvements · Quality enhancement initiatives"],
+        ["==Cross-Department Collaboration==", "==Assist other departments== in developing solutions · Metrics alignment · Quality integration across functions · Stakeholder partnership"]
+      ]
+    },
+    {
+      "heading": "TECHNICAL EXPERTISE",
+      "rows": [
+        ["Data & Analytics Tools", "Data analysis · Reporting systems · Quality metrics platforms · Dashboard creation"],
+        ["Computer Skills", "MS Excel · PowerPoint · Jira · Azure DevOps · ALM · Report generation"],
+        ["Quality Domains", "Test automation · Quality governance · Standards compliance · Process improvement"]
+      ]
+    },
+    {
+      "heading": "PROFESSIONAL EXPERIENCE",
+      "roles": [
+        {
+          "title": "==Sr. QA Manager — Quality Standards Leader==",
+          "org": "Concord Technologies",
+          "meta": "Feb 2023 – Present  |  India  |  ==Quality governance and standards==",
+          "bullets": [
+            "==Design and implement quality standards== and governance frameworks across enterprise programs; ==develop quality policies== ensuring consistency and compliance.",
+            "==Analyze quality data== to identify improvement opportunities; ==create and track progress reports== measuring quality trends, team performance, and process health.",
+            "==Coach and mentor [N] team members== on quality standards and best practices; provide corrective action and performance feedback to ensure excellence.",
+            "==Formulate productivity improvement strategies== resulting in [X% efficiency gain / $X cost savings]; work across departments to integrate quality into organizational processes."
+          ]
+        },
+        {
+          "title": "==Quality Assurance Manager — Team & Standards Lead==",
+          "org": "TCS",
+          "meta": "Jan 2014 – Jan 2023  |  India  |  ==Portfolio quality and team development==",
+          "bullets": [
+            "==Managed quality standards and governance== for large enterprise portfolios; ==designed and enforced quality policies== ensuring consistent application across [N] teams.",
+            "==Analyzed quality and performance data== to identify gaps and opportunities; ==created progress reports and dashboards== tracking quality trends and team metrics.",
+            "==Trained, coached, and motivated [N] quality professionals== to exceed standards; provided corrective action and performance development to ensure continuous improvement.",
+            "==Formulated strategies== to increase team productivity [by X%]; worked with other departments to develop integrated quality solutions and metrics."
+          ]
+        },
+        {
+          "title": "Test Lead — Quality Coach",
+          "org": "Cognizant Technology Solutions",
+          "meta": "Dec 2009 – Dec 2013  |  India  |  ==Quality delivery and team development==",
+          "bullets": [
+            "Led test engineering and quality delivery across [N] teams; ==coached teams on quality standards== and ensured adherence to testing best practices.",
+            "Worked with ==cross-functional teams== to improve quality processes and align practices with organizational goals."
+          ]
+        },
+        {
+          "title": "Project Engineer",
+          "org": "Polaris Software Lab Ltd",
+          "meta": "Aug 2006 – Nov 2009  |  India  |  ==Software engineering & QA foundations==",
+          "bullets": [
+            "Built foundational ==software engineering and quality assurance== experience, progressing into quality team leadership and standards development."
+          ]
+        }
+      ],
+      "note": "FILL-IN RULE — Prioritize: (1) Number of team members coached/managed; (2) Specific productivity or cost improvement metrics; (3) Data analysis examples (trends identified, action taken); (4) Number of recruiting hires supported. Delete brackets you cannot fill honestly."
+    },
+    {
+      "heading": "EDUCATION",
+      "rows": [
+        ["Master of Business Administration (Systems & IT)", "Bharathidasan University"],
+        ["Bachelor of Engineering (Electronics & Instrumentation)", "Bharathidasan University"]
+      ]
+    }
+  ],
+  "note": "TRADITIONAL QA MANAGER FOCUS — This spec emphasizes quality standards design, employee coaching, data analysis, and reporting (more HR/operations than technical). 70–75% fit. IMPORTANT CONTEXT: This role is a different career path from your Sr. QA Manager position. It's more operational/HR-focused (recruiting, team coaching, policy) vs. technical quality engineering leadership. GAPS TO ADDRESS: (1) Recruiting experience—not in current resume; mention if you've supported hiring. (2) Data analysis depth—emphasize any statistical analysis, trend identification, or metrics work. (3) Employee development—highlight specific coaching/mentoring outcomes. STRENGTHS: Quality standards expertise, team mentoring, cross-functional collaboration, governance, continuous improvement."
+}
