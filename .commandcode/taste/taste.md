@@ -8,4 +8,10 @@
 - Uses n8n (self-hosted workflow automation) installed as a global npm package on Windows; has been setting it up and troubleshooting its startup. Confidence: 0.6
 - Kicks off work with dense, prose-free pastes of complete raw context — error output/stack traces, terse symptom notes (e.g., "connection refused"), or full task inputs (an entire job description plus absolute file paths) — expecting autonomous end-to-end execution without clarification questions. Confidence: 0.7
 - Is a senior QA/test-automation professional (resume name: Antony Quentin Roy, ~20 years experience) actively job-hunting for Test Automation Architect roles; maintains a resume-tailoring "jobkit" project (`AITesterBlueprint4x`, chapter-based skills) and keeps career artifacts such as the master resume under `d:\Job_Data`. Confidence: 0.6
-ification questions. Confidence: 0.65
+- For new frontend app builds, specifies a modern React stack: React 18+ with functional components and hooks, Vite for build tooling, and Tailwind CSS for styling. Confidence: 0.8
+- Prefers local-first browser apps — all data persisted client-side in IndexedDB via the `idb` wrapper library, with no backend, authentication, or external API calls. Confidence: 0.7
+- Wants a clean, minimal, professional UI with a "premium" feel (references Linear/Trello-minimal aesthetics); for drag-and-drop interfaces prefers `@dnd-kit/core`. Confidence: 0.7
+- Machine environment quirk: the user's shell sets NODE_ENV=production, so a plain `npm install` silently skips devDependencies — use `npm install --include=dev` when installing project tooling. Confidence: 0.8
+- Wants apps delivered with realistic sample/seed data pre-loaded — covering every status/category and with all fields populated — so the UI can be evaluated immediately without manual data entry. Confidence: 0.6
+- Prefers strong visual color-coding for statuses/categories using conventional semantic colors (red = rejected/negative, green = selected/positive, yellow = on-hold/warning), applied distinctly across UI elements. Confidence: 0.65
+- Deploys frontend apps to Vercel (explicitly requested "deploy jobtracker in vercel"); expects the agent to handle the CLI-based deploy flow end-to-end. Confidence: 0.6
