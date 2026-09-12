@@ -84,7 +84,15 @@ export default function JobCard({ job, onEdit, onDelete, overlay = false }) {
       </div>
 
       <div className="mt-2 flex items-center justify-between text-[11px] text-slate-400 dark:text-slate-500">
-        <span>{days === 0 ? 'Applied today' : days === 1 ? '1 day ago' : `${days} days ago`}</span>
+        <span>
+          {days === null
+            ? 'Not applied yet'
+            : days === 0
+              ? 'Applied today'
+              : days === 1
+                ? '1 day ago'
+                : `${days} days ago`}
+        </span>
         {job.linkedinUrl && (
           <a
             href={job.linkedinUrl}

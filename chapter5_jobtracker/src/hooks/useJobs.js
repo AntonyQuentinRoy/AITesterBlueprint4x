@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { getAllJobs, putJob, deleteJob, replaceAllJobs } from '../db'
+import { getAllJobs, putJob, putJobs, deleteJob, replaceAllJobs } from '../db'
 import { seedJobs } from '../seedData'
 
 export function useJobs() {
@@ -36,10 +36,19 @@ export function useJobs() {
     setJobs((prev) => prev.filter((j) => j.id !== id))
   }, [])
 
-  const importJobs = useCallback(async (incoming) => {
+  const replaceJobs = useCallback(async (incoming) => {
     await replaceAllJobs(incoming)
     setJobs(incoming)
   }, [])
 
-  return { jobs, loading, saveJob, removeJob, importJobs }
+  const mergeJobs = useCallback(async (incoming) => {
+    await putJobs(incoming)
+    setJobs((prev) => {
+      const byId = new Map(prev.map((j) => [j.id, j]))
+      for (const j of incoming) byId.set(j.id, j)
+      return [...byId.values()]
+    })
+  }, [])
+
+  return { jobs, loading, saveJob, removeJob, replaceJobs, mergeJobs }
 }
