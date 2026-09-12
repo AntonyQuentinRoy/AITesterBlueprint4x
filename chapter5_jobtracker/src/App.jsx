@@ -14,12 +14,13 @@ function useDarkMode() {
 }
 
 export default function App() {
-  const { jobs, loading, saveJob, removeJob, importJobs } = useJobs()
+  const { jobs, loading, saveJob, removeJob, replaceJobs, mergeJobs } = useJobs()
   const [dark, setDark] = useDarkMode()
   const [search, setSearch] = useState('')
   const [sortDesc, setSortDesc] = useState(true)
   const [modalJob, setModalJob] = useState(undefined) // undefined=closed, null=new, job=edit
   const [deletingJob, setDeletingJob] = useState(null)
+  const [importData, setImportData] = useState(null)
   const fileInputRef = useRef(null)
 
   const filteredJobs = useMemo(() => {
@@ -53,8 +54,10 @@ export default function App() {
     const a = document.createElement('a')
     a.href = url
     a.download = `job-tracker-backup-${new Date().toISOString().slice(0, 10)}.json`
+    document.body.appendChild(a)
     a.click()
-    URL.revokeObjectURL(url)
+    a.remove()
+    setTimeout(() => URL.revokeObjectURL(url), 0)
   }
 
   const handleImport = async (e) => {
@@ -67,10 +70,20 @@ export default function App() {
         alert('Invalid backup file: expected an array of job entries.')
         return
       }
-      await importJobs(data)
+      setImportData(data)
     } catch {
       alert('Could not read that file as JSON.')
     }
+  }
+
+  const handleImportMerge = async () => {
+    await mergeJobs(importData)
+    setImportData(null)
+  }
+
+  const handleImportReplace = async () => {
+    await replaceJobs(importData)
+    setImportData(null)
   }
 
   const iconBtn =
@@ -83,7 +96,9 @@ export default function App() {
           Job Tracker
         </h1>
         <span className="rounded-full bg-blue-50 px-2 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-950 dark:text-blue-300">
-          {jobs.length} jobs
+          {search.trim()
+            ? `${filteredJobs.length} of ${jobs.length} jobs`
+            : `${jobs.length} jobs`}
         </span>
 
         <div className="relative ml-auto">
@@ -212,6 +227,17 @@ export default function App() {
           message={`Remove "${deletingJob.role}" at ${deletingJob.company}? This cannot be undone.`}
           onConfirm={handleDelete}
           onCancel={() => setDeletingJob(null)}
+        />
+      )}
+      {importData && (
+        <ConfirmDialog
+          title="Import jobs?"
+          message={`The file contains ${importData.length} jobs. Merge adds them to your existing ${jobs.length}; Replace all deletes your current jobs and keeps only the file.`}
+          confirmLabel="Replace all"
+          onConfirm={handleImportReplace}
+          altLabel="Merge"
+          onAlt={handleImportMerge}
+          onCancel={() => setImportData(null)}
         />
       )}
     </div>

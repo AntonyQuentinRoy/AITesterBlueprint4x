@@ -21,6 +21,13 @@ export async function deleteJob(id) {
   return (await dbPromise).delete(STORE, id)
 }
 
+export async function putJobs(jobs) {
+  const db = await dbPromise
+  const tx = db.transaction(STORE, 'readwrite')
+  await Promise.all(jobs.map((job) => tx.store.put(job)))
+  return tx.done
+}
+
 export async function replaceAllJobs(jobs) {
   const db = await dbPromise
   const tx = db.transaction(STORE, 'readwrite')
