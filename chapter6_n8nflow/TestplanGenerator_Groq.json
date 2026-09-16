@@ -1,0 +1,161 @@
+{
+  "name": "TestplanGenerator_Groq",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -400,
+        -96
+      ],
+      "id": "e4f06c9f-2f42-459b-b093-a8ffe282f523",
+      "name": "When chat message received",
+      "webhookId": "8b423c67-6ddd-4246-b852-00d4b3741ffd"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You have to take the JIRA ID and fetch the task from the tool with id and create a test plan"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        64,
+        -64
+      ],
+      "id": "b06ee743-41b7-4567-85c6-e120f5f57576",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "openai/gpt-oss-120b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -112,
+        144
+      ],
+      "id": "c5a73005-a724-4931-b9d6-a9a526cfa534",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "qWWNMnzNJikFAHhB",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# AI Agent using n8n for JIRA Ticket to create a Test plan",
+        "height": 80,
+        "width": 288
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -448,
+        -224
+      ],
+      "typeVersion": 1,
+      "id": "4388ef33-4a28-4225-963e-c7f0a9654198",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        80,
+        144
+      ],
+      "id": "cb905de1-f63f-4866-abb7-d91ac2fe891c",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "issueKey": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Issue_Key', ``, 'string') }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.jiraTool",
+      "typeVersion": 1,
+      "position": [
+        336,
+        128
+      ],
+      "id": "9eb4ce8e-9935-451c-8d10-3c7011e91a07",
+      "name": "Get an issue in Jira Software",
+      "credentials": {
+        "jiraSoftwareCloudApi": {
+          "id": "ynoVhbW8ZKG0m7lk",
+          "name": "Jira SW Cloud account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get an issue in Jira Software": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "725a05df-f7fe-400b-a178-4fad7b130147",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "3f681c42f8d377113d6662dcfaf57feea82e37bd554b946c6c8f450911695380"
+  },
+  "nodeGroups": [],
+  "id": "NVvSIjWPO1PxTwDB",
+  "tags": []
+}
