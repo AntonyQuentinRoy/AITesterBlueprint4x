@@ -1,0 +1,5 @@
+[
+  { "title": "Test 1: Login", "status": "passed" },
+  { "title": "Test 2: Add to Cart", "status": "passed" },
+  { "title": "Test 3: Checkout", "status": "passed" }
+]

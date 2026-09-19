@@ -1,0 +1,12 @@
+[
+  { "title": "TC01: User Login - Valid Credentials", "status": "passed" },
+  { "title": "TC02: User Registration - Existing Email", "status": "failed" },
+  { "title": "TC03: Add Product to Cart", "status": "failed" },
+  { "title": "TC04: Apply Coupon Code", "status": "passed" },
+  { "title": "TC05: Checkout - Credit Card Payment", "status": "passed" },
+  { "title": "TC06: Download Invoice PDF", "status": "passed" },
+  { "title": "TC07: Update User Profile", "status": "passed" },
+  { "title": "TC08: Search Product Filter", "status": "passed" },
+  { "title": "TC09: Password Reset Request", "status": "failed" },
+  { "title": "TC10: Logout", "status": "passed" }
+]

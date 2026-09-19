@@ -1,0 +1,314 @@
+{
+  "data": {
+    "nodes": [
+      {
+        "data": {
+          "id": "ChatInput-flaky",
+          "node": {
+            "display_name": "Chat Input",
+            "description": "Optional instructions for the flaky-test analysis.",
+            "icon": "MessagesSquare",
+            "name": "ChatInput",
+            "lf_version": "1.12.1",
+            "template": {
+              "_type": "Component",
+              "input_value": {
+                "_input_type": "MessageTextInput",
+                "display_name": "Message",
+                "name": "input_value",
+                "type": "str",
+                "value": "Identify flaky test cases from the supplied Playwright reports."
+              }
+            },
+            "outputs": [
+              {
+                "display_name": "Message",
+                "name": "message",
+                "method": "message_response",
+                "types": ["Message"],
+                "selected": "Message"
+              }
+            ]
+          },
+          "showNode": true,
+          "type": "genericNode"
+        },
+        "position": { "x": 80, "y": 420 },
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "File-report1",
+          "node": {
+            "display_name": "Read File",
+            "description": "Read the first Playwright report folder.",
+            "icon": "FileText",
+            "name": "File",
+            "lf_version": "1.12.1",
+            "template": {
+              "_type": "Component",
+              "path": {
+                "_input_type": "FileInput",
+                "display_name": "File Path",
+                "name": "path",
+                "type": "file",
+                "value": [
+                  "chapter9_langflow/Playwright_Report1/result1.json",
+                  "chapter9_langflow/Playwright_Report1/result2.json"
+                ]
+              }
+            },
+            "outputs": [
+              {
+                "display_name": "Message",
+                "name": "message",
+                "method": "message_response",
+                "types": ["Message"],
+                "selected": "Message"
+              }
+            ]
+          },
+          "showNode": true,
+          "type": "genericNode"
+        },
+        "position": { "x": 80, "y": 80 },
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "File-report2",
+          "node": {
+            "display_name": "Read File",
+            "description": "Read the second Playwright report folder.",
+            "icon": "FileText",
+            "name": "File",
+            "lf_version": "1.12.1",
+            "template": {
+              "_type": "Component",
+              "path": {
+                "_input_type": "FileInput",
+                "display_name": "File Path",
+                "name": "path",
+                "type": "file",
+                "value": [
+                  "chapter9_langflow/Playwright_Report2/result3.json",
+                  "chapter9_langflow/Playwright_Report2/result4.json"
+                ]
+              }
+            },
+            "outputs": [
+              {
+                "display_name": "Message",
+                "name": "message",
+                "method": "message_response",
+                "types": ["Message"],
+                "selected": "Message"
+              }
+            ]
+          },
+          "showNode": true,
+          "type": "genericNode"
+        },
+        "position": { "x": 80, "y": 240 },
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "PromptTemplate-flaky",
+          "node": {
+            "display_name": "Prompt Template",
+            "description": "Compare two Playwright JSON reports and classify flaky tests.",
+            "icon": "Braces",
+            "name": "PromptTemplate",
+            "lf_version": "1.12.1",
+            "template": {
+              "_type": "Component",
+              "report1": {
+                "_input_type": "MessageTextInput",
+                "display_name": "Report 1",
+                "name": "report1",
+                "type": "str",
+                "required": true,
+                "value": ""
+              },
+              "report2": {
+                "_input_type": "MessageTextInput",
+                "display_name": "Report 2",
+                "name": "report2",
+                "type": "str",
+                "required": true,
+                "value": ""
+              },
+              "user_instruction": {
+                "_input_type": "MessageTextInput",
+                "display_name": "User Instruction",
+                "name": "user_instruction",
+                "type": "str",
+                "required": false,
+                "value": ""
+              },
+              "template": {
+                "_input_type": "PromptInput",
+                "display_name": "Template",
+                "name": "template",
+                "type": "str",
+                "required": true,
+                "value": "You are a QA architect analyzing Playwright test reports.\n\nPLAYWRIGHT_REPORT1_FOLDER (repeated runs):\n{report1}\n\nPLAYWRIGHT_REPORT2_FOLDER (repeated runs):\n{report2}\n\nUSER INSTRUCTION:\n{user_instruction}\n\nEach input contains the JSON results from every file in one folder. Treat result1/result2 as repeated runs of one suite and result3/result4 as repeated runs of another suite. Parse every JSON array and match tests by exact title within each folder. A test is flaky only when the same title has different statuses across repeated runs, such as passed in one run and failed in another. A test that fails in every run is consistently failing, not flaky. A test that passes in every run is stable. Analyze both folders and combine their findings. Do not compare unrelated title namespaces across folders.\n\nReturn valid JSON only, using this schema:\n{\"flaky_test_count\": 0, \"flaky_tests\": [{\"title\": \"...\", \"folder\": \"...\", \"statuses\": [\"passed\", \"failed\"], \"reason\": \"...\"}], \"stable_test_count\": 0, \"consistently_failing_test_count\": 0, \"unmatched_test_count\": 0, \"unmatched_tests\": [], \"summary\": \"...\"}"
+              }
+            },
+            "outputs": [
+              {
+                "display_name": "Prompt",
+                "name": "prompt",
+                "method": "build_prompt",
+                "types": ["Message"],
+                "selected": "Message"
+              }
+            ]
+          },
+          "showNode": true,
+          "type": "genericNode"
+        },
+        "position": { "x": 440, "y": 220 },
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "LanguageModel-flaky",
+          "node": {
+            "display_name": "Language Model",
+            "description": "Generate the structured flaky-test report.",
+            "icon": "Brain",
+            "name": "LanguageModel",
+            "lf_version": "1.12.1",
+            "template": {
+              "_type": "Component",
+              "input_value": {
+                "_input_type": "MessageTextInput",
+                "display_name": "Input",
+                "name": "input_value",
+                "type": "str",
+                "required": true,
+                "value": ""
+              },
+              "model_name": {
+                "_input_type": "DropdownInput",
+                "display_name": "Model",
+                "name": "model_name",
+                "type": "str",
+                "value": "gpt-4o-mini"
+              },
+              "temperature": {
+                "_input_type": "FloatInput",
+                "display_name": "Temperature",
+                "name": "temperature",
+                "type": "float",
+                "value": 0
+              }
+            },
+            "outputs": [
+              {
+                "display_name": "Text",
+                "name": "text_output",
+                "method": "generate",
+                "types": ["Message"],
+                "selected": "Message"
+              }
+            ]
+          },
+          "showNode": true,
+          "type": "genericNode"
+        },
+        "position": { "x": 800, "y": 220 },
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatOutput-flaky",
+          "node": {
+            "display_name": "Chat Output",
+            "description": "Display the flaky-test analysis in the Langflow chat.",
+            "icon": "MessagesSquare",
+            "name": "ChatOutput",
+            "lf_version": "1.12.1",
+            "template": {
+              "_type": "Component",
+              "input_value": {
+                "_input_type": "MessageTextInput",
+                "display_name": "Input",
+                "name": "input_value",
+                "type": "str",
+                "required": true,
+                "value": ""
+              }
+            },
+            "outputs": [
+              {
+                "display_name": "Message",
+                "name": "message",
+                "method": "message_response",
+                "types": ["Message"],
+                "selected": "Message"
+              }
+            ]
+          },
+          "showNode": true,
+          "type": "genericNode"
+        },
+        "position": { "x": 1160, "y": 220 },
+        "type": "genericNode"
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-report1-prompt",
+        "source": "File-report1",
+        "sourceHandle": "message",
+        "target": "PromptTemplate-flaky",
+        "targetHandle": "report1",
+        "data": { "sourceHandle": { "name": "message" }, "targetHandle": { "fieldName": "report1" } }
+      },
+      {
+        "id": "edge-report2-prompt",
+        "source": "File-report2",
+        "sourceHandle": "message",
+        "target": "PromptTemplate-flaky",
+        "targetHandle": "report2",
+        "data": { "sourceHandle": { "name": "message" }, "targetHandle": { "fieldName": "report2" } }
+      },
+      {
+        "id": "edge-chat-prompt",
+        "source": "ChatInput-flaky",
+        "sourceHandle": "message",
+        "target": "PromptTemplate-flaky",
+        "targetHandle": "user_instruction",
+        "data": { "sourceHandle": { "name": "message" }, "targetHandle": { "fieldName": "user_instruction" } }
+      },
+      {
+        "id": "edge-prompt-model",
+        "source": "PromptTemplate-flaky",
+        "sourceHandle": "prompt",
+        "target": "LanguageModel-flaky",
+        "targetHandle": "input_value",
+        "data": { "sourceHandle": { "name": "prompt" }, "targetHandle": { "fieldName": "input_value" } }
+      },
+      {
+        "id": "edge-model-output",
+        "source": "LanguageModel-flaky",
+        "sourceHandle": "text_output",
+        "target": "ChatOutput-flaky",
+        "targetHandle": "input_value",
+        "data": { "sourceHandle": { "name": "text_output" }, "targetHandle": { "fieldName": "input_value" } }
+      }
+    ],
+    "viewport": { "x": 0, "y": 0, "zoom": 0.8 }
+  },
+  "description": "Langflow model for identifying flaky Playwright test cases by comparing two JSON reports.",
+  "endpoint_name": "flaky-testcase-finder",
+  "id": "flaky-testcase-finder",
+  "is_component": false,
+  "last_tested_version": "1.12.1",
+  "locked": false,
+  "name": "Flaky Testcase Finder",
+  "tags": ["playwright", "qa", "flaky-tests"]
+}
