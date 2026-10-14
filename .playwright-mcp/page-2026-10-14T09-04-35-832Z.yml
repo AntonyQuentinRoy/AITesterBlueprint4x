@@ -1,0 +1,153 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: QA
+      - generic [ref=e7]:
+        - heading "QABuddy.ai" [level=1] [ref=e8]
+        - paragraph [ref=e9]: Hybrid RAG for QA engineers
+    - generic [ref=e10]:
+      - generic [ref=e11]: What do you want to do?
+      - generic [ref=e12]:
+        - button "💬 Ask anything Onboarding and knowledge-base questions across every source" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 💬
+          - generic [ref=e15]:
+            - generic [ref=e16]: Ask anything
+            - generic [ref=e17]: Onboarding and knowledge-base questions across every source
+        - button "🧯 Failure analysis (RCA) Correlate Jenkins failures with code, bugs and meeting decisions" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: 🧯
+          - generic [ref=e20]:
+            - generic [ref=e21]: Failure analysis (RCA)
+            - generic [ref=e22]: Correlate Jenkins failures with code, bugs and meeting decisions
+        - button "🧪 Test design & gaps Compare requirements with test cases, find gaps, draft new cases" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: 🧪
+          - generic [ref=e25]:
+            - generic [ref=e26]: Test design & gaps
+            - generic [ref=e27]: Compare requirements with test cases, find gaps, draft new cases
+        - button "🐞 Bug triage Duplicates, severity, priority and affected tests for a ticket" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: 🐞
+          - generic [ref=e30]:
+            - generic [ref=e31]: Bug triage
+            - generic [ref=e32]: Duplicates, severity, priority and affected tests for a ticket
+        - button "🛠️ Framework coding help Answers and code in your own Selenium and Playwright frameworks" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 🛠️
+          - generic [ref=e35]:
+            - generic [ref=e36]: Framework coding help
+            - generic [ref=e37]: Answers and code in your own Selenium and Playwright frameworks
+        - button "🧭 Traceability (RTM) Requirements -> test cases -> automation -> open bugs" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: 🧭
+          - generic [ref=e40]:
+            - generic [ref=e41]: Traceability (RTM)
+            - generic [ref=e42]: Requirements -> test cases -> automation -> open bugs
+      - generic [ref=e43]: Knowledge sources
+      - generic [ref=e45]:
+        - generic "Manual and automated test case repository (CSV/XLSX) data/00_TestCases" [ref=e46] [cursor=pointer]:
+          - checkbox "🧪 Test cases 508" [checked] [ref=e47]
+          - generic [ref=e48]: 🧪
+          - generic [ref=e49]: Test cases
+          - generic [ref=e50]: "508"
+        - 'generic "Bug history. Jira exports, or files written by `sync-jira` data/01_JIRA_Tickets" [ref=e51] [cursor=pointer]':
+          - checkbox "🐞 JIRA tickets 11" [checked] [ref=e52]
+          - generic [ref=e53]: 🐞
+          - generic [ref=e54]: JIRA tickets
+          - generic [ref=e55]: "11"
+        - generic "Process docs, onboarding guides, standards (PDF/MD) data/02_Company_Docs" [ref=e56] [cursor=pointer]:
+          - checkbox "📄 Company docs 16" [checked] [ref=e57]
+          - generic [ref=e58]: 📄
+          - generic [ref=e59]: Company docs
+          - generic [ref=e60]: "16"
+        - generic "Meeting notes and recording transcripts data/03_Meeting_Notes" [ref=e61] [cursor=pointer]:
+          - checkbox "🗓️ Meeting notes 11" [checked] [ref=e62]
+          - generic [ref=e63]: 🗓️
+          - generic [ref=e64]: Meeting notes
+          - generic [ref=e65]: "11"
+        - generic "Lucid diagrams exported as CSV shape data, JSON or text data/04_Lucid_charts" [ref=e66] [cursor=pointer]:
+          - checkbox "🔷 Lucid charts 3" [checked] [ref=e67]
+          - generic [ref=e68]: 🔷
+          - generic [ref=e69]: Lucid charts
+          - generic [ref=e70]: "3"
+        - generic "Requirement and specification documents data/05_PRD_SRS_BRD_FRDs" [ref=e71] [cursor=pointer]:
+          - checkbox "📄 PRD / SRS / BRD / FRD 18" [checked] [ref=e72]
+          - generic [ref=e73]: 📄
+          - generic [ref=e74]: PRD / SRS / BRD / FRD
+          - generic [ref=e75]: "18"
+        - generic "ER diagrams, user guides, wireframes (phase 2) data/06_Figma_Desings" [ref=e76] [cursor=pointer]:
+          - checkbox "🎨 Figma designs phase 2" [disabled] [ref=e77]
+          - generic [ref=e78]: 🎨
+          - generic [ref=e79]: Figma designs
+          - generic [ref=e80]: phase 2
+        - generic "Console logs and JUnit/TestNG results data/06_Jenkins_Logs" [ref=e81] [cursor=pointer]:
+          - checkbox "🧯 Jenkins logs 12" [checked] [ref=e82]
+          - generic [ref=e83]: 🧯
+          - generic [ref=e84]: Jenkins logs
+          - generic [ref=e85]: "12"
+        - generic "Java + TestNG framework (POM, PageFactory, listeners) data/07_Source_Codes/ATB13xSeleniumAdvanceFramework" [ref=e86] [cursor=pointer]:
+          - checkbox "⌨️ Selenium framework 41" [checked] [ref=e87]
+          - generic [ref=e88]: ⌨️
+          - generic [ref=e89]: Selenium framework
+          - generic [ref=e90]: "41"
+        - generic "TypeScript Playwright framework (POM, fixtures, API tests) data/07_Source_Codes/AdvancePlaywrightFramework1x" [ref=e91] [cursor=pointer]:
+          - checkbox "⌨️ Playwright framework 218" [checked] [ref=e92]
+          - generic [ref=e93]: ⌨️
+          - generic [ref=e94]: Playwright framework
+          - generic [ref=e95]: "218"
+      - generic [ref=e96]: Index
+      - generic [ref=e97]:
+        - generic [ref=e98]: "838"
+        - generic [ref=e99]:
+          - generic [ref=e100]: chunks in Qdrant
+          - generic [ref=e101]: 1024-d
+        - generic [ref=e102]: qwen3-embedding:4b
+        - generic [ref=e104]: indexed 10/3/2026, 10:54:51 AM
+        - generic [ref=e106]: Re-indexing runs on the self-hosted server only.
+  - main [ref=e108]:
+    - generic [ref=e109]:
+      - generic [ref=e110]: Demo mode
+      - generic [ref=e111]: Qdrant (qabuddy) · 838 chunks
+      - generic [ref=e113]: qwen3-embedding:4b · 1024d
+      - generic [ref=e115]: bge-reranker-v2-m3
+      - generic [ref=e117]: openai/gpt-oss-120b · groq
+    - generic [ref=e121]:
+      - heading "Ask your QA knowledge base" [level=2] [ref=e122]
+      - paragraph [ref=e123]: One question, one cited answer, grounded in your Selenium and Playwright frameworks, test cases, Jira bugs, requirements, meeting notes, Lucid charts and Jenkins logs.
+      - generic [ref=e124]:
+        - button "💬 Ask anything What is the flaky test policy and what is the retry limit?" [ref=e125] [cursor=pointer]:
+          - generic [ref=e126]: 💬 Ask anything
+          - text: What is the flaky test policy and what is the retry limit?
+        - button "💬 Ask anything Who do I ask about Jenkins agents and IP allowlists?" [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: 💬 Ask anything
+          - text: Who do I ask about Jenkins agents and IP allowlists?
+        - 'button "🧯 Failure analysis (RCA) Why did vwo-selenium-regression #142 fail?" [ref=e129] [cursor=pointer]':
+          - generic [ref=e130]: 🧯 Failure analysis (RCA)
+          - text: "Why did vwo-selenium-regression #142 fail?"
+        - button "🧪 Test design & gaps Which PRD features have no test cases?" [ref=e131] [cursor=pointer]:
+          - generic [ref=e132]: 🧪 Test design & gaps
+          - text: Which PRD features have no test cases?
+        - button "🐞 Bug triage Is VWO-33 a duplicate? Set severity and priority." [ref=e133] [cursor=pointer]:
+          - generic [ref=e134]: 🐞 Bug triage
+          - text: Is VWO-33 a duplicate? Set severity and priority.
+        - button "🛠️ Framework coding help How do I wait for an element in the Selenium framework?" [ref=e135] [cursor=pointer]:
+          - generic [ref=e136]: 🛠️ Framework coding help
+          - text: How do I wait for an element in the Selenium framework?
+        - button "🧭 Traceability (RTM) Build an RTM for PRD section 6 Functional Requirements" [ref=e137] [cursor=pointer]:
+          - generic [ref=e138]: 🧭 Traceability (RTM)
+          - text: Build an RTM for PRD section 6 Functional Requirements
+      - generic [ref=e139]:
+        - generic [ref=e140]: exact ids
+        - text: +
+        - generic [ref=e141]: Qwen3 dense
+        - text: +
+        - generic [ref=e142]: code-aware BM25
+        - text: →
+        - generic [ref=e143]: Qdrant RRF
+        - text: →
+        - generic [ref=e144]: bge rerank
+        - text: →
+        - generic [ref=e145]: cited answer
+      - paragraph [ref=e146]: "Demo mode: the example questions replay runs of the full self-hosted pipeline recorded on 10/3/2026. Your own questions run keyword search in the browser."
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - 'textbox "💬 Ask anything: ask a question…" [ref=e150]'
+        - button "Ask ↵" [disabled] [ref=e151]
+      - generic [ref=e152]:
+        - generic [ref=e153]: "Mode: Ask anything · searching 9 sources"
+        - generic [ref=e154]: Enter to send · Shift+Enter for a new line · answers cite their sources

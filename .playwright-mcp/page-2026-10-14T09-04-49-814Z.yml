@@ -1,0 +1,213 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: QA
+      - generic [ref=e7]:
+        - heading "QABuddy.ai" [level=1] [ref=e8]
+        - paragraph [ref=e9]: Hybrid RAG for QA engineers
+    - generic [ref=e10]:
+      - generic [ref=e11]: What do you want to do?
+      - generic [ref=e12]:
+        - button "💬 Ask anything Onboarding and knowledge-base questions across every source" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 💬
+          - generic [ref=e15]:
+            - generic [ref=e16]: Ask anything
+            - generic [ref=e17]: Onboarding and knowledge-base questions across every source
+        - button "🧯 Failure analysis (RCA) Correlate Jenkins failures with code, bugs and meeting decisions" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: 🧯
+          - generic [ref=e20]:
+            - generic [ref=e21]: Failure analysis (RCA)
+            - generic [ref=e22]: Correlate Jenkins failures with code, bugs and meeting decisions
+        - button "🧪 Test design & gaps Compare requirements with test cases, find gaps, draft new cases" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: 🧪
+          - generic [ref=e25]:
+            - generic [ref=e26]: Test design & gaps
+            - generic [ref=e27]: Compare requirements with test cases, find gaps, draft new cases
+        - button "🐞 Bug triage Duplicates, severity, priority and affected tests for a ticket" [ref=e28] [cursor=pointer]:
+          - generic [ref=e29]: 🐞
+          - generic [ref=e30]:
+            - generic [ref=e31]: Bug triage
+            - generic [ref=e32]: Duplicates, severity, priority and affected tests for a ticket
+        - button "🛠️ Framework coding help Answers and code in your own Selenium and Playwright frameworks" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 🛠️
+          - generic [ref=e35]:
+            - generic [ref=e36]: Framework coding help
+            - generic [ref=e37]: Answers and code in your own Selenium and Playwright frameworks
+        - button "🧭 Traceability (RTM) Requirements -> test cases -> automation -> open bugs" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: 🧭
+          - generic [ref=e40]:
+            - generic [ref=e41]: Traceability (RTM)
+            - generic [ref=e42]: Requirements -> test cases -> automation -> open bugs
+      - generic [ref=e43]: Knowledge sources
+      - generic [ref=e45]:
+        - generic "Manual and automated test case repository (CSV/XLSX) data/00_TestCases" [ref=e46] [cursor=pointer]:
+          - checkbox "🧪 Test cases 508" [checked] [ref=e47]
+          - generic [ref=e48]: 🧪
+          - generic [ref=e49]: Test cases
+          - generic [ref=e50]: "508"
+        - 'generic "Bug history. Jira exports, or files written by `sync-jira` data/01_JIRA_Tickets" [ref=e51] [cursor=pointer]':
+          - checkbox "🐞 JIRA tickets 11" [checked] [ref=e52]
+          - generic [ref=e53]: 🐞
+          - generic [ref=e54]: JIRA tickets
+          - generic [ref=e55]: "11"
+        - generic "Process docs, onboarding guides, standards (PDF/MD) data/02_Company_Docs" [ref=e56] [cursor=pointer]:
+          - checkbox "📄 Company docs 16" [checked] [ref=e57]
+          - generic [ref=e58]: 📄
+          - generic [ref=e59]: Company docs
+          - generic [ref=e60]: "16"
+        - generic "Meeting notes and recording transcripts data/03_Meeting_Notes" [ref=e61] [cursor=pointer]:
+          - checkbox "🗓️ Meeting notes 11" [checked] [ref=e62]
+          - generic [ref=e63]: 🗓️
+          - generic [ref=e64]: Meeting notes
+          - generic [ref=e65]: "11"
+        - generic "Lucid diagrams exported as CSV shape data, JSON or text data/04_Lucid_charts" [ref=e66] [cursor=pointer]:
+          - checkbox "🔷 Lucid charts 3" [checked] [ref=e67]
+          - generic [ref=e68]: 🔷
+          - generic [ref=e69]: Lucid charts
+          - generic [ref=e70]: "3"
+        - generic "Requirement and specification documents data/05_PRD_SRS_BRD_FRDs" [ref=e71] [cursor=pointer]:
+          - checkbox "📄 PRD / SRS / BRD / FRD 18" [checked] [ref=e72]
+          - generic [ref=e73]: 📄
+          - generic [ref=e74]: PRD / SRS / BRD / FRD
+          - generic [ref=e75]: "18"
+        - generic "ER diagrams, user guides, wireframes (phase 2) data/06_Figma_Desings" [ref=e76] [cursor=pointer]:
+          - checkbox "🎨 Figma designs phase 2" [disabled] [ref=e77]
+          - generic [ref=e78]: 🎨
+          - generic [ref=e79]: Figma designs
+          - generic [ref=e80]: phase 2
+        - generic "Console logs and JUnit/TestNG results data/06_Jenkins_Logs" [ref=e81] [cursor=pointer]:
+          - checkbox "🧯 Jenkins logs 12" [checked] [ref=e82]
+          - generic [ref=e83]: 🧯
+          - generic [ref=e84]: Jenkins logs
+          - generic [ref=e85]: "12"
+        - generic "Java + TestNG framework (POM, PageFactory, listeners) data/07_Source_Codes/ATB13xSeleniumAdvanceFramework" [ref=e86] [cursor=pointer]:
+          - checkbox "⌨️ Selenium framework 41" [checked] [ref=e87]
+          - generic [ref=e88]: ⌨️
+          - generic [ref=e89]: Selenium framework
+          - generic [ref=e90]: "41"
+        - generic "TypeScript Playwright framework (POM, fixtures, API tests) data/07_Source_Codes/AdvancePlaywrightFramework1x" [ref=e91] [cursor=pointer]:
+          - checkbox "⌨️ Playwright framework 218" [checked] [ref=e92]
+          - generic [ref=e93]: ⌨️
+          - generic [ref=e94]: Playwright framework
+          - generic [ref=e95]: "218"
+      - generic [ref=e96]: Index
+      - generic [ref=e97]:
+        - generic [ref=e98]: "838"
+        - generic [ref=e99]:
+          - generic [ref=e100]: chunks in Qdrant
+          - generic [ref=e101]: 1024-d
+        - generic [ref=e102]: qwen3-embedding:4b
+        - generic [ref=e104]: indexed 10/3/2026, 10:54:51 AM
+        - generic [ref=e106]: Re-indexing runs on the self-hosted server only.
+  - main [ref=e108]:
+    - generic [ref=e109]:
+      - generic [ref=e110]: Demo mode
+      - generic [ref=e111]: Qdrant (qabuddy) · 838 chunks
+      - generic [ref=e113]: qwen3-embedding:4b · 1024d
+      - generic [ref=e115]: bge-reranker-v2-m3
+      - generic [ref=e117]: openai/gpt-oss-120b · groq
+      - button "New chat" [ref=e155] [cursor=pointer]
+    - generic [ref=e120]:
+      - generic [ref=e156]:
+        - generic [ref=e157]: 💬 Ask anything
+        - text: What is the flaky test policy and what is the retry limit?
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - generic [ref=e160]: QABuddy
+          - generic [ref=e225]: ✓ grounded · 4 sources cited
+          - generic [ref=e163]: recorded run · full pipeline
+        - list [ref=e166]:
+          - listitem [ref=e167]:
+            - strong [ref=e168]: Flaky test definition
+            - text: – A test is considered flaky when it fails and then passes on a retry within the same build
+            - button "1" [ref=e226] [cursor=pointer]
+            - button "2" [ref=e227] [cursor=pointer]
+            - button "6" [ref=e228] [cursor=pointer]
+            - text: .
+          - listitem [ref=e229]:
+            - strong [ref=e230]: Policy actions
+            - text: – If a test shows flaky behavior in two builds within a 7‑day window, it must be quarantined with the Jira label
+            - code [ref=e231]: flaky
+            - text: and fixed during the current sprint
+            - button "1" [ref=e232] [cursor=pointer]
+            - button "2" [ref=e233] [cursor=pointer]
+            - button "3" [ref=e234] [cursor=pointer]
+            - text: .
+          - listitem [ref=e235]:
+            - strong [ref=e236]: Retry limits
+            - text: –
+            - list [ref=e237]:
+              - listitem [ref=e238]:
+                - text: TestNG
+                - code [ref=e239]: RetryAnalyzer
+                - text: is fixed at
+                - code [ref=e240]: maxRetryCount = 3
+                - text: (must not be increased to hide failures)
+                - button "1" [ref=e241] [cursor=pointer]
+                - button "2" [ref=e242] [cursor=pointer]
+                - text: .
+              - listitem [ref=e243]:
+                - text: Playwright runs with
+                - code [ref=e244]: "retries: 2"
+                - text: on CI; a test that fails all retries is treated as a real failure
+                - button "1" [ref=e245] [cursor=pointer]
+                - text: .
+        - generic [ref=e170]:
+          - heading "Sources (6)" [level=4] [ref=e171]
+          - generic [ref=e172]:
+            - button "1 📄 Company docs QA Process Handbook · 4 Flaky test policy L46-L52 §4" [ref=e173] [cursor=pointer]:
+              - generic [ref=e174]:
+                - generic [ref=e175]: "1"
+                - generic [ref=e176]: 📄 Company docs
+              - generic [ref=e177]: QA Process Handbook · 4 Flaky test policy
+              - generic [ref=e178]: L46-L52 §4
+              - generic "rerank 0.981" [ref=e179]
+            - 'button "2 🗓️ Meeting notes Meeting notes: 2026-04-10 Sprint 15 QA Planning · 4 Flaky test policy L26-L29 §4" [ref=e181] [cursor=pointer]':
+              - generic [ref=e182]:
+                - generic [ref=e183]: "2"
+                - generic [ref=e184]: 🗓️ Meeting notes
+              - generic [ref=e185]: "Meeting notes: 2026-04-10 Sprint 15 QA Planning · 4 Flaky test policy"
+              - generic [ref=e186]: L26-L29 §4
+              - generic "rerank 0.979" [ref=e187]
+            - button "3 🐞 JIRA tickets QAB-102 · comment by Pramod QAB-102 comment 1" [ref=e189] [cursor=pointer]:
+              - generic [ref=e190]:
+                - generic [ref=e191]: "3"
+                - generic [ref=e192]: 🐞 JIRA tickets
+              - generic [ref=e193]: QAB-102 · comment by Pramod
+              - generic [ref=e194]: QAB-102 comment 1
+              - generic "rerank 0.865" [ref=e195]
+            - button "4 📄 Company docs QA Process Handbook · outline (6 sections) outline" [ref=e197] [cursor=pointer]:
+              - generic [ref=e198]:
+                - generic [ref=e199]: "4"
+                - generic [ref=e200]: 📄 Company docs
+              - generic [ref=e201]: QA Process Handbook · outline (6 sections)
+              - generic [ref=e202]: outline
+              - generic "rerank 0.788" [ref=e203]
+            - button "5 🔷 Lucid charts CI Test Pipeline · Introduction L1-L22" [ref=e205] [cursor=pointer]:
+              - generic [ref=e206]:
+                - generic [ref=e207]: "5"
+                - generic [ref=e208]: 🔷 Lucid charts
+              - generic [ref=e209]: CI Test Pipeline · Introduction
+              - generic [ref=e210]: L1-L22
+              - generic "rerank 0.227" [ref=e211]
+            - button "6 📄 Company docs QA Onboarding Guide · 6 Glossary p.2 §6" [ref=e213] [cursor=pointer]:
+              - generic [ref=e214]:
+                - generic [ref=e215]: "6"
+                - generic [ref=e216]: 📄 Company docs
+              - generic [ref=e217]: QA Onboarding Guide · 6 Glossary
+              - generic [ref=e218]: p.2 §6
+              - generic "rerank 0.192" [ref=e219]
+        - generic [ref=e221]:
+          - generic [ref=e246]: total 9.3s
+          - generic [ref=e222]: rerank 8.1s
+          - generic [ref=e247]: first token 673ms
+          - generic [ref=e248]: tokens 1631 in / 206 out
+          - generic [ref=e249]: openai/gpt-oss-120b
+          - button "How was this found?" [ref=e223] [cursor=pointer]
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - 'textbox "💬 Ask anything: ask a question…" [ref=e150]'
+        - button "Ask ↵" [disabled] [ref=e250]
+      - generic [ref=e152]:
+        - generic [ref=e153]: "Mode: Ask anything · searching 9 sources"
+        - generic [ref=e154]: Enter to send · Shift+Enter for a new line · answers cite their sources

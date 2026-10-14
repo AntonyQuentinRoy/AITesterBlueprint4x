@@ -191,6 +191,11 @@ and a login), droplet sizing and the phase 2 hourly auto-ingest cron. See
 
 **https://qabuddy-ai-nine.vercel.app**
 
+For a Vercel project connected to this repository, leave **Root Directory** at the
+repository root. The root `vercel.json` builds this demo UI and registers its chat
+function; the config in this folder supports projects whose Root Directory is set
+to `chapter_12_RAG_QA_BuddyAI`.
+
 `./run.sh demo` records every example question through the full local pipeline and
 exports the chunk corpus. The hosted page replays those recorded runs (complete with
 retrieval traces), and answers new questions with BM25 in the browser plus a

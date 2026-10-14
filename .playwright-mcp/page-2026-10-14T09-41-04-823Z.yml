@@ -1,0 +1,47 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to content":
+    - /url: "#geist-skip-nav"
+  - alert [ref=f4e2]
+  - generic [ref=f4e4]:
+    - banner [ref=f4e5]:
+      - link "Vercel logo":
+        - /url: /home
+        - button [ref=f4e6] [cursor=pointer]:
+          - img "Vercel Logo" [ref=f4e7]
+      - navigation [ref=f4e9]:
+        - navigation [ref=f4e10]:
+          - link [ref=f4e11] [cursor=pointer]:
+            - /url: /signup?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fai-tester-blueprint4x-7zemzys5d-antony-4-x.vercel.app%252F%26nonce%3D75f3f3cfd0a6aa8867eca769d8bf45973004ba046a48a6fd8da134d6652409bd
+            - paragraph [ref=f4e13]: Sign Up
+    - main [ref=f4e14]:
+      - generic [ref=f4e16]:
+        - heading "Log in to Vercel" [level=1] [ref=f4e19]
+        - generic [ref=f4e20]:
+          - generic [ref=f4e21]:
+            - textbox "Email Address" [ref=f4e24]
+            - button "Continue with Email" [ref=f4e27] [cursor=pointer]
+          - generic [ref=f4e30]:
+            - button "Continue with Google" [ref=f4e31] [cursor=pointer]:
+              - generic [ref=f4e35]:
+                - generic [ref=f4e36]: Continue with
+                - text: Google
+            - button "Continue with GitHub" [ref=f4e37] [cursor=pointer]:
+              - generic [ref=f4e41]:
+                - generic [ref=f4e42]: Continue with
+                - text: GitHub
+            - button "Continue with ChatGPT" [ref=f4e43] [cursor=pointer]:
+              - generic [ref=f4e47]:
+                - generic [ref=f4e48]: Continue with
+                - text: ChatGPT
+            - button "Continue with SAML SSO" [ref=f4e50] [cursor=pointer]
+            - button "Continue with Passkey" [ref=f4e55] [cursor=pointer]
+            - button "Show other options" [ref=f4e60] [cursor=pointer]
+        - paragraph [ref=f4e63]:
+          - text: Don't have an account?
+          - link "Sign Up" [ref=f4e64] [cursor=pointer]:
+            - /url: /signup?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fai-tester-blueprint4x-7zemzys5d-antony-4-x.vercel.app%252F%26nonce%3D75f3f3cfd0a6aa8867eca769d8bf45973004ba046a48a6fd8da134d6652409bd
+      - generic [ref=f4e67]:
+        - link "Terms" [ref=f4e68] [cursor=pointer]:
+          - /url: /legal/terms
+        - link "Privacy Policy" [ref=f4e69] [cursor=pointer]:
+          - /url: /legal/privacy-policy

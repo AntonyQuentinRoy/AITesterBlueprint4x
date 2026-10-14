@@ -1,0 +1,48 @@
+- generic [ref=f9e3]:
+  - complementary [ref=f9e4]:
+    - generic [ref=f9e5]:
+      - generic [ref=f9e6]: QA
+      - generic [ref=f9e7]:
+        - heading "QABuddy.ai" [level=1] [ref=f9e8]
+        - paragraph [ref=f9e9]: Hybrid RAG for QA engineers
+    - generic [ref=f9e10]:
+      - generic [ref=f9e11]: What do you want to do?
+      - generic [ref=f9e12]: Knowledge sources
+      - generic [ref=f9e14]: Index
+      - generic [ref=f9e15]:
+        - generic [ref=f9e16]: …
+        - generic [ref=f9e17]: chunks in Qdrant
+        - generic [ref=f9e19]: Re-indexing runs on the self-hosted server only.
+  - main [ref=f9e21]:
+    - generic [ref=f9e22]:
+      - generic [ref=f9e23]: Demo mode
+      - generic [ref=f9e24]: Loading demo data…
+    - generic [ref=f9e28]:
+      - heading "Ask your QA knowledge base" [level=2] [ref=f9e29]
+      - paragraph [ref=f9e30]: One question, one cited answer, grounded in your Selenium and Playwright frameworks, test cases, Jira bugs, requirements, meeting notes, Lucid charts and Jenkins logs.
+      - region [ref=f9e31]:
+        - generic [ref=f9e32]:
+          - generic [ref=f9e33]:
+            - text: GET STARTED
+            - heading "What can I ask?" [level=3] [ref=f9e34]
+            - paragraph [ref=f9e35]: Choose a prompt to try it, or type any QA question in the box below.
+          - button "Type your own" [ref=f9e36] [cursor=pointer]: Type your own ↓
+      - generic [ref=f9e37]:
+        - generic [ref=f9e38]: exact ids
+        - text: +
+        - generic [ref=f9e39]: Qwen3 dense
+        - text: +
+        - generic [ref=f9e40]: code-aware BM25
+        - text: →
+        - generic [ref=f9e41]: Qdrant RRF
+        - text: →
+        - generic [ref=f9e42]: bge rerank
+        - text: →
+        - generic [ref=f9e43]: cited answer
+    - generic [ref=f9e45]:
+      - generic [ref=f9e46]:
+        - textbox "Ask about tests, bugs, requirements, or framework code…" [ref=f9e47]
+        - button "Ask ↵" [disabled] [ref=f9e48]
+      - generic [ref=f9e49]:
+        - generic [ref=f9e50]: "Mode: · searching 0 sources"
+        - generic [ref=f9e51]: Enter to send · Shift+Enter for a new line · answers cite their sources

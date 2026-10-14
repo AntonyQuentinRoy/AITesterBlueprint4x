@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo skip",
+  "buildCommand": "cd chapter_12_RAG_QA_BuddyAI/ui && npm install && npm run build:demo",
+  "outputDirectory": "chapter_12_RAG_QA_BuddyAI/ui/dist-demo",
+  "functions": {
+    "chapter_12_RAG_QA_BuddyAI/api/demo-chat.js": {
+      "maxDuration": 60
+    }
+  }
+}
