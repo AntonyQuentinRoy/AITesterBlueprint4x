@@ -1,7 +1,7 @@
 user_age = int(input("Enter your age\n"))
 
 if user_age >= 18:
-    print("Yes You can go to GOA and vote")
+    print("Yes You can go and vote")
 else:
     print("Not you can't go and can't vote")
 
