@@ -1,0 +1,47 @@
+# print("Hi", end="\n")
+# print("Hello", end="\n")
+
+# print("Hi", end="")
+# print("Hi1", end="")
+
+#Which print parameter controls the separator between multiple objects?
+# print("Hello", "World", sep=" ")
+
+#What does print(..., flush=True) guarantee?
+
+
+#print("Hello", flush=True)
+
+# print(len("I am Batman"))
+
+# age = 30
+
+# # print(type(age))
+
+# print(-7)
+
+# print('Hello' + 7 raises:)
+
+#Ternary expression syntax:
+
+
+# for i in range(5):
+#     print(i)
+
+
+#Sample iteration for list
+
+# for i in ["apple", "banana", "cherry"]:
+#     print(i)
+
+    #Leap year check
+
+    # divisible_by_4 = True
+    # divisible_by_100 = False
+    # divisible_by_400 = False
+
+    #fibonacci series
+    list1 = [0, 1]
+    for i in range(2, 10):
+        next_number = list1[i - 1] + list1[i - 2]
+        list1.append(next_number)
