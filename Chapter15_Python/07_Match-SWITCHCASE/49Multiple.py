@@ -1,4 +1,4 @@
-point = (10, 20)
+point = tuple(map(int, input("Enter point coordinates (x, y) separated by a comma: ").split(',')))
 
 match point:
     case (0, 0):

@@ -1,6 +1,6 @@
-is_pramod_married = True
-print(not is_pramod_married)
-print(is_pramod_married)
+is_roy_married = True
+print(not is_roy_married)
+print(is_roy_married)
 
 # Logical Operator -> bool
 # > , <  >= <=

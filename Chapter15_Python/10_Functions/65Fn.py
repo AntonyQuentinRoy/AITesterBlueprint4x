@@ -1,5 +1,5 @@
 # Functions - reusable block of code. 
-# Built in - Python guys
+# Built in - Python
 # User Defined / Custom
 
 print("Hello World")
