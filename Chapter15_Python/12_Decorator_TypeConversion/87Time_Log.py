@@ -30,10 +30,19 @@ def test_ui_2():
     time.sleep(5)
 
 print(" -----  ")
-
 #with decor
 test_ui_1()
 
 print(" -----  ")
 # without the decor
 test_ui_2()
+
+#Explain this program flow in simple terms:
+# Step1: The program starts by importing the 'time' module,
+# which is used to measure the execution time of functions.
+
+# Step2: A decorator function 'time_decorator' is defined,
+# which takes another function as an argument.
+# Inside this decorator, a wrapper function is defined that records the start time,
+# calls the original function, records the end time, and then calculates 
+# and prints the total time taken by the function.

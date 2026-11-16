@@ -15,3 +15,4 @@ def drive_ola_scooter():
 
 
 drive_ola_scooter()
+#Purpose of decorator is to add some extra functionality to the existing function without changing the original function code.

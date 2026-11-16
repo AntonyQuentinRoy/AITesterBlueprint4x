@@ -1,8 +1,8 @@
 my_list = [1, 2, 3]
 
-my_list[0] = "Pramod"
-my_list[1] = "Dutta"
-my_list[1] = "Dutta"
+my_list[0] = "anto"
+my_list[1] = "roy"
+my_list[2] = "quentin"
 
 print(my_list)
 
